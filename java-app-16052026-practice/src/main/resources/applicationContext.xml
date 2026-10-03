@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		https://www.springframework.org/schema/context/spring-context.xsd">
+		
+		
+		<bean class="com.codegnan.app.javaapp16052026practice.service.CustomerService" id="customerService "></bean>
+		<bean class="com.codegnan.app.javaapp16052026practice.service.ProductService" id="productService "></bean>
+		<bean class="com.codegnan.app.javaapp16052026practice.service.SellerService" id="sellerService "></bean>
+		<bean class="com.codegnan.app.javaapp16052026practice.service.OrderService" id="orderService "></bean>
+			<constructor-arg ref="customerService"/>
+			<constructor-arg ref="productService"/>
+			
+		<bean class="com.codegnan.app.javaapp16052026practice.service.PaymentService" id="paymentService "></bean>
+		<bean class="com.codegnan.app.javaapp16052026practice.service.ShipmentService" id="shipmentService"></bean>
+</beans>
